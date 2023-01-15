@@ -1,0 +1,28 @@
+
+<!--index.wxml-->
+<button wx:if="{{!userInfo}}" style="margin-top:10px;" id="history" type="default" bindtap="getUserProfile" >见微知嘱</button>
+
+<view  wx:else class="body">
+ <view class="container">
+  <view class="container345">
+  <image class="bgPic" src="{{bgPic}}"></image>     
+  <view class="username">{{username}}</view>   
+                        
+</view>
+<!-- <button class="weui-btn" bind:tap="getUserProfile">使用头像</button> -->      
+  <view>
+   <!-- 可以在button这里加上这一行让按钮与之处于同一水平线上 style="display: inline-block; -->
+   <view class="kongxi"><!---空隙--></view>
+   <!--可以使用plain="true"的形式来让按钮透明-->
+
+
+<button style="margin-top:10px;" id="history" type="default" bindtap="goto"  >快速搜索</button>
+<button style="margin-top:10px;" id="history" type="default" bindtap="goto2" >中药材识别</button>
+<button style="margin-top:10px;" id="history" type="default" bindtap="goto3" >智能询问</button>
+<button style="margin-top:10px;" id="history" type="default" bindtap="tui" >退出登录</button>
+
+</view>
+</view>
+</view> 
+
+

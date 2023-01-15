@@ -1,0 +1,21 @@
+<!--pages/message/message.wxml-->
+
+<view class="title1">
+  浏 览 记 录
+</view>
+<view class="interval"></view>
+<view class="border" bindtap="click">
+历史消息记录：{{message}}
+</view>
+<view class="interval"></view>
+<view class="border">
+历史消息记录：{{message}}
+</view>
+<view class="interval"></view>
+<view class="border">
+历史消息记录：{{message}}
+</view>
+<view class="interval"></view>
+<view class="border">
+历史消息记录：{{message}}
+</view>

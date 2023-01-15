@@ -1,0 +1,26 @@
+<!--pages/china/china.wxml-->
+<div class="title">推荐内容</div>
+
+<view wx:for="{{array}}" data-item="item" wx:for-index="idx" wx:key="*this">
+<view  class="content">
+<view wx:if="{{item.photoUrl==null}}">
+</view>
+<view wx:else>
+  <image class="img" src="{{'http://nick.cab/'+item.photoUrl}}"/>
+</view>
+<view class="name">
+名称:{{item.name}}
+</view>
+<view class="text">
+描述:{{item.description}}
+<view  class="son1" type="default" bindtap="detail" data-hi4='{{item.id}}' data-hi5='{{item.index}}'>详情</view>
+</view>
+
+
+
+</view>
+<view class="interval"></view>
+</view>
+
+<view class="interval"></view>
+<button bindtap="change" type="default">不感兴趣?换一批</button>

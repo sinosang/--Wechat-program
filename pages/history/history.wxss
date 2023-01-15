@@ -1,0 +1,29 @@
+/* pages/message/message.wxss */
+
+page{
+  background-color: #CDE0C9;
+  display:flex;
+  flex-direction:column;
+  justify-content:flexstart;
+}
+
+.title1{
+  font-size:22px;
+  text-align:center;
+  font-weight:bold;
+  color:whitesmoke;
+  text-shadow: 0 0px 5px gray;
+}
+.interval{
+  width:100%;
+  height:10px;
+}
+.border{
+  background-color: whitesmoke;
+  width:98.5%;
+  height: 50px;
+  border-width: 2px;
+  border-style:solid;
+  border-radius: 5px;
+  opacity:0.8;
+}

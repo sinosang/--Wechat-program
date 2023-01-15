@@ -1,0 +1,69 @@
+<view class="draw">
+
+<view class="draw1">
+  <view class="inputfat">
+<input  class="input"  bindinput="input1"
+placeholder=" 请   输   入   药   品   名   称"  auto-focus="true" 	confirm-type="send"/>
+</view>
+
+<view class="inputbtn">
+  <!-- <image class="inputbtn3" src="/icon/搜索.png" bindtap="searchresult"></image> -->
+  <image class="inputbtn3" src="http://nick.cab/front/ic_search.png" bindtap="searchresult" data-hi='{{input1}}'>
+       <!-- 用一个data-hi来表示这个tap中获取的input所在的位置为hi -->
+  </image>
+</view>
+<!-- </form> -->
+</view>
+
+</view>
+<view class="interval2"></view>
+<view class="interval2"></view>
+<view>
+  <view class="alllist">
+<view class="list">
+  <view class="hotsearch">热 搜 药 品</view>
+  <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='维生素'>1.维生素</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='感冒药'>2.感冒药</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='999感冒灵'>3.999感冒灵</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='安琪感冒颗粒'>4.安琪感冒颗粒</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='腹泻'>5.藿香正气水</view>
+ <view class="interval2"></view>
+ <view class="list1"  bindtap='hot' data-hot='风油精'>6.风油精</view>
+ <view class="interval2"></view>
+ <view class="list1"bindtap='hot' data-hot='抗癌'>7.抗癌</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='维生素'>8.维生素</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='碘酒'>9.碘酒</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='云南白药'>10.云南白药</view>
+ <view  data-hot='帮助'>...</view>
+</view>
+<view class="line"></view>
+<view class="list2">
+  <view class="hotsearch">发 现 药 品</view>
+  <view class="interval2"></view>
+ <view class="list1" class="list1" bindtap='hot' data-hot='抗肿瘤'>抗肿瘤</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='血栓'>血栓</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='高血压'>高血压</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='头晕'>头晕</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='安眠药'>安眠药</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='防晒霜'>防晒霜</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='减肥'>减肥</view>
+
+
+ <view  data-hot='帮助'>...</view>
+</view>
+</view>
+</view>

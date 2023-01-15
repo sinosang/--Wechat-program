@@ -1,0 +1,25 @@
+<!--pages/searchlist/searchlist.wxml-->
+<!-- <view>输入的搜索内容为:{{keyword}}</view> -->
+<view class="title">药品查询结果</view>
+<view class="interval"></view>
+
+
+<view wx:for="{{array}}" data-item="item" wx:for-index="idx" wx:key="*this">
+<view  class="content">
+<view class="name">
+名称:{{item.dname}}
+</view>
+<view class="text">
+价格:{{item.price}}
+</view>
+<view class="text">
+日期:{{item.date}}
+</view>
+</view>
+
+</view>
+
+
+
+<view class="interval"></view>
+<!-- <button bindtap="plus" type="default" data-hi="{{keyword}}" data-hello="{{l}}">下一页</button> -->

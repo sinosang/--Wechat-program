@@ -1,0 +1,86 @@
+/* pages/question/question2/question2.wxss */
+.title{
+  font-size:25px;
+  text-align:center;
+  font-weight:bold;
+  color:whitesmoke;
+  text-shadow: 0 0px 5px gray;
+}
+page{
+  background-color:#e3ebe2;
+}
+.interval{
+  width:100%;
+  height:20px;
+}
+.list1{
+  width:60%;
+  background-color:white;
+  text-align:center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-width: 2px;
+  position:relative;
+  left:25px;
+  opacity: 0.9;
+}
+.list2{
+  width:60%; 
+   position:relative;
+  left:25px;
+  background-color:white;
+  text-align:center;
+  /* border-bottom-left-radius: 5px; */
+  border-bottom-right-radius: 5px;
+  opacity: 0.9;
+  border-width: 2px;
+}
+.name{
+  float:left;
+  font-size:23px;
+  font-weight: bold;
+}
+.text{
+  font-size:20px;
+  width:100%;
+  /* background-color:rgb(248, 248, 248); */
+  
+  text-decoration: underline;
+  border-radius: 5px;
+  opacity: 0.6;
+}
+.textkey{
+  font-size:20px;
+  width:90%;
+  /* background-color:rgb(248, 248, 248); */
+  border-radius: 5px;
+  opacity: 0.6;
+}
+.text2{
+  font-size:20px;
+  float:left;
+}
+.content{
+  /* 居中 */
+             display: grid;
+            place-items: center;
+}
+.tri{
+  position:relative;
+  left:25px;
+  width:0;
+  height:0;
+  border-width:10px;
+  border-style:solid;
+  border-color:  white  transparent transparent white;
+  opacity: 0.9;
+}
+.robot{
+  position:relative;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0.9;
+  left:5px;
+  height:50px;
+  width:15%;
+}

@@ -1,0 +1,10 @@
+<!--pages/setting/setting.wxml-->
+<!-- <text>pages/setting/setting.wxml</text> -->
+<view class="background">
+<view>
+黑夜模式？
+</view>
+<view>
+老年人模式？
+</view>
+</view>

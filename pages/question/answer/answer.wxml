@@ -1,0 +1,22 @@
+<!--pages/question/answer/answer.wxml-->
+<view class="title">询问结果</view>
+<view wx:for="{{array}}" data-item="item" wx:for-index="idx" wx:key="*this">
+<!-- <view  class="content"> -->
+
+<view  class="list1">
+
+<view class="name">询问问题：</view>
+<view class="interval"></view>
+<view class="interval"></view>
+<view class="text">{{key}}</view> 
+<view class="name">解答: </view>
+<view class="interval"></view>
+<view class="interval"></view>
+<view class="text">{{item}} </view>
+</view>
+<view class="tri">
+</view>
+ <view>
+<image class="robot" src="http://nick.cab/front/vision.png"></image>
+</view> 
+</view>

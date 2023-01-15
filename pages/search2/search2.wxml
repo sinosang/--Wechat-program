@@ -1,0 +1,78 @@
+<view class="draw">
+
+<view class="draw1">
+  <view class="inputfat">
+<input  class="input"  bindinput="input1"  auto-focus="true" 	confirm-type="send"/>
+</view>
+
+<view class="inputbtn">
+  <image class="inputbtn2" src="http://nick.cab/front/scanning.png"  bindtap="getCode" date-type= '{{qRCodeMsg}}'>
+  </image>
+  <!-- <image class="inputbtn3" src="/icon/搜索.png" bindtap="searchresult"></image> -->
+  <image class="inputbtn3" src="http://nick.cab/front/ic_search.png" bindtap="searchresult" data-hi='{{input1}}'>
+       <!-- 用一个data-hi来表示这个tap中获取的input所在的位置为hi -->
+  </image>
+</view>
+<!-- </form> -->
+</view>
+
+</view>
+
+<view class="interval2"></view>
+<view class="interval2"></view>
+<view class="father">
+  <view class="alllist">
+<view class="list">
+  <view class="hotsearch">热 搜</view>
+  <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='胃痛'>1.胃痛</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='肺炎'>2.肺炎</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='头痛'>3.头痛</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='失眠'>4.失眠</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='腹泻'>5.腹泻</view>
+ <view class="interval2"></view>
+ <view class="list1"  bindtap='hot' data-hot='感冒'>6.感冒</view>
+ <view class="interval2"></view>
+ <view class="list1"bindtap='hot' data-hot='脚气'>7.脚气</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='维生素'>8.维生素</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='健身'>9.健身</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='头皮屑'>10.头皮屑</view>
+ <view  data-hot='帮助'>...</view>
+</view>
+<view class="line"></view>
+<view class="list2">
+  <view class="hotsearch">发 现</view>
+  <view class="interval2"></view>
+ <view class="list1" class="list1" bindtap='hot' data-hot='失眠'>失眠</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='熬夜晚睡'>熬夜晚睡</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='加班'>加班</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='头晕'>头晕</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='心律不齐'>心律不齐</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='面部出油'>面部出油</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='食物中毒'>食物中毒</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='发烧'>发烧</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='咳嗽不断'>咳嗽不断</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='甲沟炎'>甲沟炎</view>
+
+ <view  data-hot='帮助'>...</view>
+</view>
+</view>
+</view>
+<button class="paizhao" bindtap="paizhao" type="default">拍照识别</button>
+

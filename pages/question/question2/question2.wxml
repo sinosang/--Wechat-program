@@ -1,0 +1,29 @@
+<!--pages/question/question2/question2.wxml-->
+<view class="title">是不是想问</view>
+<view  class="list1">
+<view class="name">当前发问：</view>
+<view class="interval"></view>
+<view class="interval"></view>
+<view class="content">
+  <view class="textkey">{{key}} </view>
+  </view>
+
+<view class="interval"></view>
+<view class="name">猜你想问：</view>
+<view class="interval"></view>
+<view class="interval"></view>
+</view>
+<view class="list2">
+<view wx:for="{{array}}" data-item="item" wx:for-index="idx" wx:key="*this">
+<!-- <view  class="content"> -->
+<view class="content">
+<view class="text" bindtap='look' data-key='{{item}}'>{{item}} </view>
+<view class="interval"></view>
+</view>
+</view>
+</view>
+<view class="tri">
+</view>
+<view>
+<image class="robot" src="http://nick.cab/front/vision.png"></image>
+</view>

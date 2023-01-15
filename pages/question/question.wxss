@@ -1,0 +1,150 @@
+/* pages/question/question.wxss */
+.draw{
+  /* widows: 100%; */
+  position:absolute;
+  bottom:0px;
+  height: 44px;
+  width:100%;
+  background-color: #f2eada;
+}
+
+page{
+  background-color:white;
+  
+ }
+.form{
+  background-color:#CDE0C9;
+}
+.text{
+display:flex;
+/* align-items: center; */
+justify-content: center;
+/* 用于固定居中 */
+}
+.interval{
+/* background-color: red; */
+width:100%;
+height:30px;
+}
+.interval2{
+  /* background-color: red; */
+  width:100%;
+  height:12px;
+  }
+.draw1{
+height:42px;
+width:98.5%;
+text-align: center;
+background-color:white;
+border-style: solid;
+border-width: 2px;
+border-radius: 10px;
+border-color:rgb(218, 210, 210);
+}
+.input{
+font-size:16px;
+height:40px;
+}
+.inputfat{
+float:left;
+left:10%;
+width:60%;
+height:40px;
+background-color: white;
+border-radius: 5px;
+}
+.inputbtn{
+float:right;
+background-color: blue;
+width:100px;
+height:40px;
+border-radius: 10px;
+text-align:center;
+}
+.clearbtn{
+  float:right;
+  width:100px;
+  height:40px;
+  border-radius: 10px;
+  text-align:center;
+  }
+.question{
+  position:absolute;
+  background: green;
+  color: white;
+  right:-200px;
+  width: 30%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  }
+.hotsearch{
+  color:rgb(228, 86, 86);
+  font-weight:bold;
+  font-size:20px;
+
+}
+.title{
+  font-size:22px;
+text-align:center;
+font-weight:bold;
+color:black;
+/* text-shadow: 0 0px 5px gray; */
+}
+.list{
+  font-size:17px;
+  font-weight:bold;
+position:relative;
+left:10px;
+  float:left;
+  background-color: white;
+opacity:0.9;
+border-radius:5px;
+/* border-style:solid;
+border-width: 5px; */
+/* border-color:#CDE0C9; */
+/* border-color:#b9c4b7; */
+height:400px;
+width:48%;
+}
+.line{
+  position:relative;
+  float:left;
+  width:3px;
+  height:430px;
+  opacity: 0.3;
+  background-color:rgb(48, 46, 46);
+}
+.list1{
+  border-radius: 5px;
+  border-width:2px;
+  border-style:solid;
+  background-color: whitesmoke;
+  width:120px;
+  text-align:center;
+}
+.list2{
+  font-size:17px;
+  font-weight:bold;
+position:relative;
+left:10px;
+  float:right;
+  background-color: white;
+opacity:0.9;
+border-radius:5px;
+/* border-style:solid;
+border-width: 5px; */
+/* border-color:#CDE0C9; */
+/* border-color:#b9c4b7; */
+height:400px;
+width:46%;
+}
+.line2{
+  position:relative;
+
+  width:100%;
+  height:3px;
+  opacity: 0.3;
+  /* bottom:130px; */
+  background-color:rgb(48, 46, 46);
+}

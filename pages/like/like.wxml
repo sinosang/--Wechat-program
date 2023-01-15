@@ -1,0 +1,23 @@
+<!--pages/like/like.wxml-->
+
+<view class="title1">
+  收  藏
+</view>
+<view class="interval"></view>
+<view class="border" bindtap="click">
+收藏：{{message}}
+<image class="img" src="{{star}}" bindtap="cancel" ></image>
+</view>
+<view class="interval"></view>
+<view class="border" bindtap="click">
+收藏：{{message}}
+</view>
+<view class="interval"></view>
+<view class="border" bindtap="click">
+收藏：{{message}}
+</view>
+<view class="interval"></view>
+<view class="border" bindtap="click">
+收藏：{{message}}
+</view>
+

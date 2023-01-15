@@ -1,0 +1,41 @@
+<view class="img-wrap">
+  <view class="title">智能图片识别</view>
+  <view class="list1">
+  <view class="text">1.欢迎体验智能图片识别模块O(∩_∩)O</view>
+  <view class="text">2.点击“添加图片”进行图片的上传，智能识别</view>
+  <view class="text">3.点击“删除图片”，可以重新添加图片，进行识别</view>
+  <view class="text">4.(目前处于测试阶段，可识别100种中药材，结果仅供参考)</view>
+  <view class="list2">
+  <view class="both">   
+     <view class="interval"></view>
+     <view id="add" class="button" bindtap="bindUpload">添加图片</view>
+     <view class="interval2"></view>
+    <view id='delete' class="button" bindtap='deleteImg'>删除图片</view>
+    </view>
+      <view>
+      <image class="img" src="{{pic}}"></image>
+  </view></view>
+
+</view>
+  
+    <view class="list3">  
+      <view wx:if="{{name1!=''}}">
+      <view class="both1">
+    <view class="name2">名称  </view>
+<view class="text5" bindtap="goto" data-n1="{{name1}}">{{name1}}</view>
+<view class="text5" bindtap="goto" data-n1="{{name2}}">{{name2}}</view>
+<view class="text5" bindtap="goto" data-n1="{{name3}}">{{name3}}</view>
+    </view>
+    <view class="both2">
+    <view class="name3">置信度</view>
+<view>{{bel1}}</view>
+<view>{{bel2}}</view>
+<view>{{bel3}}</view>
+</view>
+    </view>
+
+
+
+</view>
+
+</view>

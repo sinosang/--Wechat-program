@@ -1,0 +1,8 @@
+/* pages/setting/setting.wxss */
+
+page{
+  background-color:#CDE0C9;
+  display:flex;
+  flex-direction:column;
+  justify-content:flexstart;
+}

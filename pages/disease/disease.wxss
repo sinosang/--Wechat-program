@@ -1,0 +1,67 @@
+/* pages/disease/disease.wxss */
+page{
+  background-color:#CDE0C9;
+ 
+  display:flex;
+  flex-direction:column;
+  justify-content:flexstart;
+ }
+ .interval2{
+  width:100%;
+  height:20px;
+}
+ .interval{
+   width:100%;
+   height:10px;
+ }
+ .content{
+   border-style:solid;
+   border-width:1px;
+   border-radius:5px;
+   border-radius:5px;
+   border-color:gray;
+   background-color: white;
+   width:100%;
+   opacity:0.7;
+   height: 150px;
+   overflow-y: scroll;
+ }
+ .son1{
+  text-align: center;
+  position:relative;
+  float:right;
+ width:40px;
+ height:25px;
+ font-size: 15px;
+ font-weight:normal;
+ color:white;
+ border:solid;
+ border-radius: 5px;
+ border-width: 1px;
+ background-color: rgb(158, 158, 190);
+}
+.name{
+  font-size:22px;
+  font-weight: bold;
+}
+ .text{
+   font-size:18px;
+   font-weight:lighter;
+ }
+ .img{
+   width:60%;
+   height:120px;
+ }
+  .title{
+    font-size:22px;
+  text-align:center;
+  font-weight:bold;
+  color:whitesmoke;
+  text-shadow: 0 0px 5px gray;
+  }
+ .dot {
+   height: 10px;
+   width: 10px;
+   background-color: rgba(171, 226, 223);
+   border-radius: 50%;
+ }

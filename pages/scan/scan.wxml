@@ -1,0 +1,37 @@
+<!--pages/scan/scan.wxml-->
+<!--pages/china/china.wxml-->
+<div class="title1">扫码内容</div>
+<view class="head">
+<image class="fah" mode="widthFix" src="{{img1}}"/>
+<view class="son">"名称"：</view>
+<div>{{name1}}</div>
+<!-- <view class="son1">"药品ID"：{{id}}</view> -->
+</view>
+<view class="interval"></view>
+<view class="content1">
+<view class="content">
+  <view class="dot" ></view>
+<view class="text" id="indication">扫码结果：{{id}}</view>
+<view class="dot" ></view>
+<view class="text" id="description">制药公司：{{company}}</view>
+<view class="dot" ></view>
+<view class="text" id="indication">用药目的：{{purpose1}}</view>
+<view class="dot" ></view>
+<view class="text" id="dosage">使用方法：{{dosage1}}</view>
+<view class="dot" ></view>
+<view class="text" id="information">用量：{{spec1}}</view>
+<view class="dot" ></view>
+<view class="text" id="function1">用药考虑：{{consideration1}}</view>
+<view class="dot" ></view>
+<view class="text" id="function1">{{other1}}</view>
+<view class="dot" ></view>
+<view class="text" id="indication">禁忌：{{taboo1}}</view>
+<view class="dot" ></view>
+<view class="text" id="indication">通称，别称：{{trademark1}}</view>
+<view class="dot" ></view>
+<view class="text" id="indication">批准文号：{{approval1}}</view>
+</view>
+</view>
+<view class="interval"></view>
+<button bindtap="exit" type="default">返回主页面</button>
+

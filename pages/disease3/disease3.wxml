@@ -1,0 +1,38 @@
+<!--pages/disease/disease.wxml-->
+<view class="title">
+  <view wx:if="{{indexuse=='disease'}}">疾病</view>
+  <view wx:if="{{indexuse=='zhongyaocai'}}">中药材</view>
+  <view wx:if="{{indexuse=='prescriptions'}}">方剂</view>
+  <view wx:if="{{indexuse=='drug'}}">药品</view>
+  <view wx:if="{{indexuse=='diet'}}">药膳食疗</view>
+  <view wx:if="{{indexuse=='xuewei'}}">针灸穴位</view>
+  <view wx:if="{{indexuse=='hospital'}}">医院</view>
+  <view wx:if="{{indexuse=='symptom'}}">症状</view>
+  <view wx:if="{{indexuse=='terminology'}}">术语</view>
+</view>
+<view class="interval">
+<!-- <view class="text" id="description">描述：{{description1}}</view> -->
+</view>
+<view wx:for="{{array}}" data-item="item" wx:for-index="idx" wx:key="*this">
+<view  class="content">
+<view wx:if="{{item.photoUrl==null}}">
+</view>
+<view wx:else>
+  <image class="img" src="{{'http://nick.cab/'+item.photoUrl}}"/>
+</view>
+<view class="name">
+名称:{{item.name}}
+<view  class="son1" type="default" bindtap="detail" data-hi4='{{item.id}}' data-hi5='{{item.index}}'>详情</view>
+</view>
+<view class="descripe">
+描述:{{item.description}}
+
+</view>
+</view>
+<view class="interval"></view>
+</view>
+
+
+<button bindtap="change" type="default" data-hi='{{array}}' data-hi2='{{len}}' data-hi3='{{indexuse}}'>不感兴趣?下一页</button>
+<view class="interval2"></view>
+<button bindtap="goback" type="default" data-hi='{{array}}' data-hi2='{{len}}' data-hi3='{{indexuse}}'>忘了？返回上一页</button>

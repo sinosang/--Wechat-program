@@ -1,0 +1,13 @@
+<!--pages/knowledge/knowledge.wxml-->
+<view class="pic">
+<image class="fah" mode="widthFix" src="{{picture}}"/>
+<view class="son">药品名称：{{name}}</view>
+</view>
+
+<view class="content">
+<text>
+{{message}}
+</text>
+</view>
+
+<button style="margin-top:10px;" id="change" type="default">换一个</button>

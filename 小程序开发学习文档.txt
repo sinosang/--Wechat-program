@@ -1,0 +1,87 @@
+page表示当前页面，按照page的次序，第一个page为主页面
+page页面是针对一个单独页面，app配置的是所有的页面
+
+window表示上方的导航栏{
+"backgroundTextStyle": "dark",                            //表示下拉刷新的时候显示的小点颜色，dark/light
+  "navigationBarBackgroundColor": "#0094ff",          //表示上方导航栏的背景颜色
+"navigationBarTitleText": "my Wx prograss",         //表示导航栏的内容文本
+"navigationBarTextStyle": "white",                          // 导航栏标题颜色，仅支持 black / white
+ "enablePullDownRefresh":true,                       //是否允许下拉刷新
+    "backgroundColorTop": "#99ffff",          //表示下拉时显示的颜色
+  "backgroundColor": "#FFFF00",                     //表示上下拉动窗口的背景色，top，bottom优先级更高
+
+}
+
+tabbar下方导航栏{
+"list": [{                                          //用list必须要最少有两个内容
+     "pagePath": "pages/index/index",              //要有一个pagepath为这个路径，表示主页面
+     "text": "主页",                                             //text表示这个图片的名称（显示在图片下方）
+     "iconPath": "icon/answer.png",                  //表示这个图片路径
+     "selectedIconPath": "icon/answer.png"   //表示这个图片的路径
+   },
+{
+    "pagePath": "pages/demo01/demo01",
+    "text": "历史",
+    "iconPath": "icon/history4.png",
+    "selectedIconPath": "icon/history4.png"
+   },
+
+ "color": "#ffffff",                       //表示这个字体的颜色
+  "selectedColor": "#3399ff",    //表示选中时出现的颜色
+  "backgroundColor": "#33ffff"    //表示导航栏的背景颜色
+]}
+
+
+sitemap页面
+ 
+{
+  "rules":[{
+    "action": "allow",            // 命中该规则的页面是否能被索引，只有allow和disallow
+    "page": "path/to/page",        // path/to/page => 不被索引  //path/to/page?a=1&b=2 => 优先索引
+    "params": ["a", "b"],               
+    "matching": "exclusive"
+  }, {
+    "action": "disallow",
+    "page": "path/to/page"          
+  }]
+}
+
+
+
+
+1 text相当于web中的span标签   表示行内元素，不会换行
+2.view相当于web中的div标签   表示块级元素  会换行
+3.checkbox  相当于web中的复选框   
+//在使用checked调用js中的文件方法的时候要注意   checked="{{ischecked}}"  "和{之间不能有空格，否则会变成true
+
+4wx:for ="{{数组或者对象}}"       wx:for -item="循环的名称//value.name"        wx：for-index="循环的索引//index"
+  wx:key  用于绑定，提高列表渲染的性能
+   wx:key="*this"  *this表示循环项
+  
+5block标签的使用会让这个标签的内容不会出现在调试器当中  相当于template 
+
+6可以用wx:if="{{true}}"  wx:elif  wx:else 的形式来表明
+也可一用hidden="{{true}}"来表示是否显示
+ //当标签不是频繁切换的时候，优先使用wx:if    他会把标签从当前的页面结构中给移除掉
+//频繁显示的时候则使用hidden      通过切换样式的方法来切换显示
+
+swiper
+标签默认样式
+width100%
+height 150px
+swiper 高度无法实现由内容撑开
+
+swiper宽度/swiper 高度=原图的宽度/原图的高度
+swiper的高度=swiper的宽度*原图的高度/原图的宽度
+height：100vw*352/1125
+
+autoplay  自动轮播
+interval 修改轮播时间
+circular 衔接轮播
+indicaor-dot 显示指示器，分页器
+
+
+big 使用大图标，将图标的宽和高设置为 95rpx，和标签栏的高相等；
+overflow 将图标上移，使其一部分在标签栏外面显示；
+circle 将图标的图片截取为圆形；
+shadow 给图标加阴影。

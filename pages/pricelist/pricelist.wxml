@@ -1,0 +1,149 @@
+<!--pages/searchlist/searchlist.wxml-->
+<!-- <view>输入的搜索内容为:{{keyword}}</view> -->
+<view class="title1">药品查询结果</view>
+<view class="interval"></view>
+
+
+<view class="head">
+<image class="fah" mode="widthFix" src="{{photoUrl}}"/>
+<view class="son">"名称"：{{name}}</view>
+</view>
+<!-- <button bindtap="plus" type="default" data-hi="{{keyword}}" data-hello="{{l}}">下一页</button> -->
+<view class="content1">
+<view class="content">
+  <view class="text" id="description">id:{{id}}</view>
+  <view class="text" id="description">最低价格:{{min}}</view>
+  <view class="son1" type="default" bindtap="goto" data-hi="{{keyword}}" data-hello="{{id}}">查看药店</view>
+<view class="text" id="description">药店数量：{{description}}</view>
+</view>
+</view>
+
+<view class="head">
+<image class="fah" mode="widthFix" src="{{photoUrl2}}"/>
+<view class="son">"名称"：{{name2}}</view>
+</view>
+<view class="content1">
+<view class="content">
+  <view class="text" id="description">id:{{id2}}</view>
+  <view class="text" id="description">最低价格:{{min2}}</view>
+  <view class="son1" type="default" bindtap="goto" data-hi="{{keyword}}" data-hello="{{id2}}">查看药店</view>
+<view class="text" id="description">药店数量：{{description2}}</view>
+</view>
+</view>
+
+<view class="head">
+<image class="fah" mode="widthFix" src="{{photoUrl3}}"/>
+<view class="son">"名称"：{{name3}}</view>
+</view>
+<view class="content1">
+<view class="content">
+  <view class="text" id="description">id:{{id3}}</view>
+  <view class="text" id="description">最低价格:{{min3}}</view>
+  <view class="son1" type="default" bindtap="goto" data-hi="{{keyword}}" data-hello="{{id3}}">查看药店</view>
+<view class="text" id="description">药店数量：{{description3}}</view>
+</view>
+</view>
+
+<view class="head">
+<image class="fah" mode="widthFix" src="{{photoUrl4}}"/>
+<view class="son">"名称"：</view>
+<div>{{name4}}</div>
+</view>
+<view class="content1">
+<view class="content">
+  <view class="text" >id:{{id4}}</view>
+  <view class="text" id="description">最低价格:{{min4}}</view>
+  <view class="son1" type="default" bindtap="goto" data-hi="{{keyword}}" data-hello="{{id4}}">查看药店</view>
+<view class="text" >药店数量：{{description4}}</view>
+</view>
+</view>
+<view class="head">
+<image class="fah" mode="widthFix" src="{{photoUrl5}}"/>
+<view class="son">"名称"：</view>
+<div>{{name5}}</div>
+</view>
+<view class="content1">
+<view class="content">
+  <view class="text">id:{{id5}}</view>
+  <view class="text" id="description">最低价格:{{min5}}</view>
+  <view class="son1" type="default" bindtap="goto" data-hi="{{keyword}}" data-hello="{{id5}}">查看药店</view>
+<view class="text">药店数量：{{description5}}</view>
+</view>
+</view>
+
+
+<view class="head">
+<image class="fah" mode="widthFix" src="{{photoUrl6}}"/>
+<view class="son">"名称"：</view>
+<div>{{name6}}</div>
+</view>
+<view class="content1">
+<view class="content">
+  <view class="text">id:{{id6}}</view>
+  <view class="text" id="description">最低价格:{{min6}}</view>
+  <view class="son1" type="default" bindtap="goto" data-hi="{{keyword}}" data-hello="{{id6}}">查看药店</view>
+<view class="text">药店数量：{{description6}}</view>
+</view>
+</view>
+
+
+<view class="head">
+<image class="fah" mode="widthFix" src="{{photoUrl7}}"/>
+<view class="son">"名称"：</view>
+<div>{{name7}}</div>
+</view>
+<view class="content1">
+<view class="content">
+  <view class="text">id:{{id7}}</view>
+  <view class="text" id="description">最低价格:{{min7}}</view>
+  <view class="son1" type="default" bindtap="goto" data-hi="{{keyword}}" data-hello="{{id7}}">查看药店</view>
+<view class="text">药店数量：{{description7}}</view>
+</view>
+</view>
+
+
+<view class="head">
+<image class="fah" mode="widthFix" src="{{photoUrl8}}"/>
+<view class="son">"名称"：</view>
+<div>{{name8}}</div>
+</view>
+<view class="content1">
+<view class="content">
+  <view class="text">id:{{id8}}</view>
+  <view class="text" id="description">最低价格:{{min8}}</view>
+  <view class="son1" type="default" bindtap="goto" data-hi="{{keyword}}" data-hello="{{id8}}">查看药店</view>
+<view class="text">药店数量：{{description8}}</view>
+</view>
+</view>
+
+
+<view class="head">
+<image class="fah" mode="widthFix" src="{{photoUrl9}}"/>
+<view class="son">"名称"：</view>
+<div>{{name9}}</div>
+</view>
+<view class="content1">
+<view class="content">
+  <view class="text">id:{{id9}}</view>
+  <view class="text" id="description">最低价格:{{min9}}</view>
+  <view class="son1" type="default" bindtap="goto" data-hi="{{keyword}}" data-hello="{{id9}}">查看药店</view>
+<view class="text">药店数量：{{description9}}</view>
+</view>
+</view>
+
+
+<view class="head">
+<image class="fah" mode="widthFix" src="{{photoUrl10}}"/>
+<view class="son">"名称"：</view>
+<div>{{name10}}</div>
+</view>
+<view class="content1">
+<view class="content">
+  <view class="text">id:{{id10}}</view>
+  <view class="text" id="description">最低价格:{{min10}}</view>
+  <view class="son1" type="default" bindtap="goto" data-hi="{{keyword}}" data-hello="{{id10}}">查看药店</view>
+<view class="text">药店数量：{{description5}}</view>
+</view>
+</view>
+
+<!-- <button bindtap="plus" type="default" data-hi="{{keyword}}" data-hello="{{l}}">下一页</button> -->

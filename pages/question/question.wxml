@@ -1,0 +1,71 @@
+<!--pages/question/question.wxml-->
+<!-- <view class="question" style="right:{{viewLeft}}px">
+  提问:{{input1}}
+</view> -->
+<view class="title">大家都在搜</view>
+<view class="interval"></view>
+<!-- <view class="line2"></view> -->
+<view class="alllist">
+<view class="list">
+  <view class="hotsearch">热 搜</view>
+  <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='饭后肚子痛'>1.饭后肚子痛</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='饭后胃痛'>2.饭后胃痛</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='为什么会肝疼'>3.为什么会肝疼</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='头痛怎么办'>4.头痛怎么办</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='腹泻'>5.腹泻</view>
+ <view class="interval2"></view>
+ <view class="list1"  bindtap='hot' data-hot='感冒怎么治'>6.感冒怎么治</view>
+ <view class="interval2"></view>
+ <view class="list1"bindtap='hot' data-hot='脚气'>7.脚气</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='预防流感'>8.预防流感</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='如何科学健身'>9.如何科学健身</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='去除头皮屑'>10.去除头皮屑</view>
+ <view  data-hot='帮助'>...</view>
+</view>
+<view class="line"></view>
+<view class="list2">
+  <view class="hotsearch">发 现</view>
+  <view class="interval2"></view>
+ <view class="list1" class="list1" bindtap='hot' data-hot='失眠'>失眠</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='熬夜晚睡'>熬夜晚睡</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='加班'>加班</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='头晕'>头晕</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='心律不齐'>心律不齐</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='面部出油'>面部出油</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='食物中毒'>食物中毒</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='发烧'>发烧</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='咳嗽不断'>咳嗽不断</view>
+ <view class="interval2"></view>
+ <view class="list1" bindtap='hot' data-hot='甲沟炎'>甲沟炎</view>
+
+ <view  data-hot='帮助'>...</view>
+</view>
+</view>
+
+
+<view class="draw">
+<view class="draw1">
+<form bindsubmit='wifiForm' class="form">
+<input type='text' class="inputfat" name='wifiname'  value='{{content}}'></input>
+
+<button class="clearbtn"  bindtap="clear" type="primary"  size="mini">取消</button>
+<button class="inputbtn" formType="submit" type="primary" plain size="mini">询问</button>
+</form>
+</view>
+</view>

@@ -1,0 +1,32 @@
+<!--pages/searchlist/searchlist.wxml-->
+<!-- <view>输入的搜索内容为:{{keyword}}</view> -->
+<view class="title">查询结果</view>
+
+<view class="interval">
+<!-- <view class="text" id="description">描述：{{description1}}</view> -->
+</view>
+<view wx:for="{{array}}" data-item="item" wx:for-index="idx" wx:key="*this">
+<view  class="content">
+<view wx:if="{{item.photoUrl==null}}">
+</view>
+<view wx:else>
+  <image class="img" src="{{'http://nick.cab/'+item.photoUrl}}"/>
+</view>
+<view class="name">
+名称:{{item.name}}
+</view>
+<view class="text">
+描述:{{item.description}}
+</view>
+<view class="text">
+id:{{item.id}}
+<view  class="son1" type="default" bindtap="detail" data-hi4='{{item.id}}' data-hi5='{{item.index}}'>详情</view>
+</view>
+
+</view>
+
+</view>
+
+
+<view class="interval"></view>
+<button bindtap="change" type="default" data-hi='{{array}}' data-hi2='{{len}}' data-hi3='{{key}}'>下一页</button>

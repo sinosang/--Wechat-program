@@ -1,0 +1,317 @@
+<!--pages/details/details.wxml-->
+<view class="title1">
+  <view wx:if="{{index=='disease'}}">详细内容———疾病</view>
+  <view wx:if="{{index=='zhongyaocai'}}">详细内容——中药材</view>
+  <view wx:if="{{index=='prescriptions'}}">详细内容——方剂</view>
+  <view wx:if="{{index=='drug'}}">详细内容——药品</view>
+  <view wx:if="{{index=='diet'}}">详细内容——药膳食疗</view>
+  <view wx:if="{{index=='xuewei'}}">详细内容——针灸穴位</view>
+  <view wx:if="{{index=='hospital'}}">详细内容——医院</view>
+  <view wx:if="{{index=='symptom'}}">详细内容——症状</view>
+  <view wx:if="{{index=='terminology'}}">详细内容——术语</view>
+</view>
+<view class="interval"></view>
+
+<view wx:if="{{index=='disease'}}"> 
+   <view class="head">
+      <view wx:if="{{array.photoUrl==null}}"></view>
+      <view wx:else> 
+     <image class="img" src="{{'http://nick.cab/'+array.photoUrl}}"/>
+       </view>
+      
+<view class="son" class="text2">"名称"：</view>
+<div>{{array.name}}</div>
+<!-- <view class="son1">"药品ID"：{{id}}</view> -->
+</view>
+    
+<view class="content1">
+<view class="content">
+  <view class="text2">发病症状：</view>
+<view class="text" >{{array.zhengzhuang}}</view>
+<view class="text2">病因:</view>
+<view class="text" id="indication">{{array.bingyin}}</view>
+<view class="text2">描述:</view>
+<view class="text" id="function1">{{array.description}}</view>
+<view class="text2">症状出现范围:</view>
+<view class="text" id="function1">{{array.liuxingbingxue}}</view>
+<view class="text2">日常护理：</view>
+<view class="text" id="information">{{array.richang}}</view>
+<view class="text2">日常饮食：</view>
+<view class="text" id="information">{{array.yinshi}}</view>
+<view class="text2">如何预防：</view>
+<view class="text" >{{array.yufang}}</view>
+<view class="text2">治疗：</view>
+<view class="text" >{{array.zhiLiao}}</view>
+
+</view>
+</view>
+</view>
+
+  <view wx:if="{{index=='zhongyaocai'}}">  
+    <view class="head">
+      <view wx:if="{{array.photoUrl==null}}"></view>
+      <view wx:else> 
+     <image class="img" src="{{'http://nick.cab/'+array.photoUrl}}"/>
+       </view>
+      
+<view class="son" class="text2">"名称"：</view>
+<div>{{array.name}}</div>
+<!-- <view class="son1">"药品ID"：{{id}}</view> -->
+</view>
+    
+<view class="content1">
+<view class="content">
+<view class="text2">描述:</view>
+<view class="text" id="indication">{{array.description}}</view>
+<view class="text2">可用于治疗：</view>
+<view class="text" id="function1">{{array.application}}</view>
+<view class="text2">功效：</view>
+<view class="text" id="information">{{array.efficacy}}</view>
+<view class="text2">药材信息：</view>
+<view class="text" id="information">{{array.information}}</view>
+<view class="text2">用量：</view>
+<view class="text" >{{array.processing}}</view>
+<view class="text2">使用注意：</view>
+<view class="text" >{{array.identification}}</view>
+
+</view>
+</view>
+  </view>
+
+  <view wx:if="{{index=='drug'}}">
+    <view class="head">
+      <view wx:if="{{array.photoUrl==null}}"></view>
+      <view wx:else> 
+     <image class="img" src="{{'http://nick.cab/'+array.photoUrl}}"/>
+       </view>
+      
+<view class="son" class="text2">"名称"：</view>
+<div>{{array.name}}</div>
+<!-- <view class="son1">"药品ID"：{{id}}</view> -->
+</view>
+    
+<view class="content1">
+<view class="content">
+<view class="text2">描述:</view>
+<view class="text" id="indication">{{array.description}}</view>
+<view class="text2">组成成分：</view>
+<view class="text" id="information">{{array.element}}</view>
+<view class="text2">使用方法：</view>
+<view class="text" id="function1">{{array.dosage}}</view>
+<view class="text2">使用剂量：</view>
+<view class="text" id="information">{{array.specification}}</view>
+<view class="text2">适合混合用：</view>
+<view class="text" >{{array.indications}}</view>
+<view class="text2">不适混用：</view>
+<view class="text" >{{array.interactions}}</view>
+<view class="text2">使用注意：</view>
+<view class="text" >{{array.precautions}}</view>
+<view class="text2">不良反应：</view>
+<view class="text" >{{array.reactions}}</view>
+<view class="text2">禁忌：</view>
+<view class="text" >{{array.taboo}}</view>
+<view class="text2">存储条件：</view>
+<view class="text" >{{array.storage}}</view>
+</view>
+</view>
+  </view>
+
+  <view wx:if="{{index=='prescriptions'}}"> 
+  <view class="head">
+      <view wx:if="{{array.photoUrl==undefined}}"></view>
+      <view wx:else> 
+     <image class="img" src="{{'http://nick.cab/'+array.photoUrl}}"/>
+       </view>
+      
+<view class="son" class="text2">"名称"：</view>
+<div>{{array.name}}</div>
+<!-- <view class="son1">"药品ID"：{{id}}</view> -->
+</view>
+    
+<view class="content1">
+<view class="content">
+  <view class="text2">发病迹象：</view>
+<view class="text" id="function1">{{array.indications}}</view>
+<view class="text2">功效：</view>
+<view class="text" id="indication">{{array.function}}</view>
+<view class="text2">描述:</view>
+<view class="text" id="indication">{{array.description}}</view>
+<view class="text2">配方：</view>
+<view class="text" id="information">{{array.composition}}</view>
+<view class="text2">使用方法：</view>
+<view class="text" id="function1">{{array.dosage}}</view>
+<view class="text2">可增加物品：</view>
+<view class="text" id="function1">{{array.addition}}</view>
+<view class="text2">典籍来源：</view>
+<view class="text" id="information">{{array.literature}}</view>
+</view>
+</view>
+</view>
+
+  <view wx:if="{{index=='diet'}}">
+    <view class="head">
+      <view wx:if="{{array.photoUrl==undefined}}"></view>
+      <view wx:else> 
+     <image class="img" src="{{'http://nick.cab/'+array.photoUrl}}"/>
+       </view>
+      
+<view class="son" class="text2">"名称"：</view>
+<div class="text">{{array.name}}</div>
+<!-- <view class="son1">"药品ID"：{{id}}</view> -->
+</view>
+    
+<view class="content1">
+<view class="content">
+<!-- <view class="text" id="indication">id：{{array.id}}</view>
+<view class="text2">所属：</view>
+<view class="text" id="description">{{array.index}}</view> -->
+
+<view class="text2">作用：</view>
+<view class="text" id="indication">{{array.compatibility}}</view>
+
+<view class="text2">描述:</view>
+<view class="text" id="indication">{{array.description}}</view>
+
+<view class="text2">配方：</view>
+<view class="text" id="information">{{array.formula}}</view>
+
+<view class="text2">食用方法：</view>
+<view class="text" id="function1">{{array.method}}</view>
+<view class="text2">来源：</view>
+<view class="text" id="indication">{{array.source}}</view>
+</view></view>
+  </view>
+
+  <view wx:if="{{index=='xuewei'}}">
+    <view class="head">
+      <view wx:if="{{array.photoUrl==undefined}}"></view>
+      <view wx:else> 
+     <image class="img" src="{{'http://nick.cab/'+array.photoUrl}}"/>
+       </view>
+      
+<view class="son" class="text2">"名称"：</view>
+<div>{{array.name}}</div>
+<!-- <view class="son1">"药品ID"：{{id}}</view> -->
+</view>
+    
+<view class="content1">
+<view class="content">
+
+<!-- <view class="text" id="indication">id：{{array.id}}</view>
+<view class="dot" ></view>
+<view class="text" id="description">所属：{{array.index}}</view> -->
+<view class="text2">发病迹象：</view>
+<view class="text" id="indication">{{array.indication}}</view>
+<view class="text2">定义：</view>
+<view class="text" id="indication">{{array.definition}}</view>
+<view class="text2">描述：</view>
+<view class="text" id="indication">{{array.description}}</view>
+<view class="text2">位置：</view>
+<view class="text" id="dosage">{{array.position}}</view>
+<view class="text2">操作手法：</view>
+<view class="text" id="information">{{array.operate}}</view>
+<view class="text2">功效：</view>
+<view class="text" id="function1">{{array.function}}</view>
+<view class="text2">现代:</view>
+<view class="text" id="indication">{{array.application}}</view>
+<view class="text2">配合治疗：</view>
+<view class="text" id="function1">{{array.compatibility}}</view>
+<view class="text2">来源：</view>
+<view class="text" id="indication">{{array.discussion}}</view>
+</view></view>
+  </view>
+
+
+  <view wx:if="{{index=='hospital'}}">  
+  
+   <view class="head">
+      <view wx:if="{{array.photoUrl==undefined}}"></view>
+      <view wx:else> 
+     <image class="img" src="{{'http://nick.cab/'+array.photoUrl}}"/>
+       </view>
+      
+<view class="son" class="text2">"名称"：</view>
+<div>{{array.name}}</div>
+<!-- <view class="son1">"药品ID"：{{id}}</view> -->
+</view>
+    
+<view class="content1">
+<view class="content">
+
+<!-- <view class="text" id="indication">id：{{array.id}}</view>
+<view class="dot" ></view>
+<view class="text" id="description">所属：{{array.index}}</view> -->
+<view class="text2">描述：</view>
+<view class="text" id="indication">{{array.description}}</view>
+<view class="text2">医院优势：</view>
+<view class="text" id="information">{{array.important}}</view>
+<view class="text2">就医注意：</view>
+<view class="text" id="indication">{{array.jiuyi}}</view>
+<view class="text2">预约：</view>
+<view class="text" id="dosage">{{array.yuyue}}</view>
+</view>
+</view>
+</view>
+
+
+  <view wx:if="{{index=='symptom'}}">  
+   <view class="head">
+      <view wx:if="{{array.photoUrl==null}}"></view>
+      <view wx:else> 
+     <image class="img" src="{{'http://nick.cab/'+array.photoUrl}}"/>
+       </view>
+      
+<view class="son" class="text2">"名称"：</view>
+<div>{{array.name}}</div>
+<!-- <view class="son1">"药品ID"：{{id}}</view> -->
+</view>
+    
+<view class="content1">
+<view class="content">
+<view class="text2">病因:</view>
+<view class="text" id="indication">{{array.bingyin}}</view>
+<view class="text2">描述:</view>
+<view class="text" id="function1">{{array.description}}</view>
+<view class="text2">症状出现范围:</view>
+<view class="text" id="function1">{{array.liuxingbingxue}}</view>
+<view class="text2">日常护理：</view>
+<view class="text" id="information">{{array.richang}}</view>
+<view class="text2">症状表现：</view>
+<view class="text" id="information">{{array.zhengzhuang}}</view>
+<view class="text2">治疗：</view>
+<view class="text" >{{array.zhiLiao}}</view>
+
+</view>
+</view>
+</view>
+
+  <view wx:if="{{index=='terminology'}}">  
+    <view class="head">
+      <view wx:if="{{array.photoUrl==null}}"></view>
+      <view wx:else> 
+     <image class="img" src="{{'http://nick.cab/'+array.photoUrl}}"/>
+       </view>
+      
+<view class="son" class="text2">"名称"：</view>
+<div>{{array.name}}</div>
+<!-- <view class="son1">"药品ID"：{{id}}</view> -->
+</view>
+    
+<view class="content1">
+<view class="content">
+<view class="text2">概念</view>
+<view class="text" id="indication">{{array.concept}}</view>
+<view class="text2">描述</view>
+<view class="text" id="function1">{{array.description}}</view>
+<view class="text2">解释：</view>
+<view class="text" id="information">{{array.interpretation}}</view>
+<view class="text2">详细：</view>
+<view class="text" id="information">{{array.domain}}</view>
+<view class="text2">参考来源：</view>
+<view class="text" >{{array.references}}</view>
+
+</view>
+</view></view>
+
+<view class="interval"></view>
+<button bindtap="exit" type="default">返回主页面</button>

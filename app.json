@@ -1,0 +1,83 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/main/main",
+    "pages/login/login",   
+    "pages/knowledge/knowledge",
+    "pages/history/history",
+    "pages/logs/logs",
+    "pages/like/like",
+    "pages/tuijian/tuijian",
+    "pages/disease/disease",
+    "pages/disease2/disease2",
+    "pages/disease3/disease3",
+    "pages/setting/setting",
+    "pages/scan/scan",
+    "pages/question/question",
+    "pages/question/question2/question2",
+    "pages/question/answer/answer",
+    "pages/test/test",
+    "pages/price/price",
+    "pages/pricelist/pricelist",
+    "pages/priceresult/priceresult",
+    "pages/search2/search2",
+    "pages/paizhao/paizhao",
+    "pages/searchlist/searchlist",
+    "pages/searchlist2/searchlist2",
+    "pages/searchlist3/searchlist3",
+    "pages/details/details"
+  ],
+
+  "window": {
+    "backgroundTextStyle": "dark",
+    
+    "navigationBarBackgroundColor": "#f2eada",
+
+    "navigationBarTitleText": "见微",
+    "navigationBarTextStyle": "black",
+    "backgroundColorTop": "#2C6975",   
+    "backgroundColor": "#f2eada"
+  },
+  "tabBar": {
+    
+    "color": "#122e29",
+    "selectedColor": "#72baa7",
+  
+    "backgroundColor": "#f2eada",
+    "list": [{
+      
+      "pagePath": "pages/main/main",
+      "text": "首页",
+      "iconPath": "icon/home (1).png",
+      "selectedIconPath": "icon/home (1).png"
+    },
+    {
+      "pagePath": "pages/tuijian/tuijian",
+      "text": "推荐",
+      "iconPath": "icon/hot.png",
+      "selectedIconPath": "icon/hot.png"
+    },
+    {
+      "pagePath": "pages/question/question",
+      "text": "智能问答",
+      "iconPath": "icon/vision.png",
+      "selectedIconPath": "icon/vision.png"
+    },
+    {
+      "pagePath": "pages/price/price",
+      "text": "药价参考",
+      "iconPath": "icon/nav-list.png",
+      "selectedIconPath": "icon/nav-list.png"
+    },
+{
+  "pagePath": "pages/index/index",
+  "text": "我的",
+  "iconPath": "icon/用户.png",
+  "selectedIconPath": "icon/用户.png"
+}]
+  },
+ 
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

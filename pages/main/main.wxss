@@ -1,0 +1,134 @@
+.draw{
+    /* widows: 100%; */
+    height: 55px;
+    background-color: #f2eada;
+}
+swiper{
+    position: relative;
+    height:175px;
+    /* left:6%;
+    width:94%; */
+}
+swiper-item{
+  text-align:center;
+}
+.swiperitem{
+  border-radius:10px;
+    width:90%;
+    height:180px;
+}
+#scand{
+    position:relative;
+    width:30%;
+    margin-top:20px;
+}
+.btnpic{
+  text-align:center;
+ margin:0 auto;
+ display:fixed;
+  width:100%;
+  height:70px;
+}
+.text{
+  display:flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* 用于固定居中 */
+}
+.btn{
+    transition: 0.2s all;
+    background-color: transparent 80%;
+        /* 给按钮添加渐变色 */
+     border:1px transparent solid; 
+    /* 给按钮添加阴影效果 */
+    border-radius: 5px;
+box-shadow: 1px 1px 1px rgb(136, 134, 134);
+width:10px;
+height:50px;
+display:flex;
+align-items: center;
+justify-content: center;
+}
+.btn:active{
+    color:whitesmoke;
+    transform: scale(0.99);
+}
+.btns{
+  float:left;
+  transition: 0.2s all;
+  background-color:#f2eada;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgb(136, 134, 134);
+border: aqua;
+border-radius: 5px;
+width:20%;
+height:100px;
+opacity: 0.8;
+}
+.btns:active{
+  color:black;
+  transform: scale(0.99);
+}
+.interval{
+  float:left;
+/* background-color: red; */
+width:10%;
+height:100px;
+}
+.interval2{
+  float:left;
+  width:5%;
+/* background-color: blue; */
+height:100px;
+}
+.int3{
+  float:left;
+  height:20px;
+  width:100%;
+}
+.int4{
+  float:left;
+  height:40px;
+  width:100%;
+}
+.int5{
+  float:left;
+  height:15px;
+  width:100%;
+}
+.draw1{
+  height:37px;
+  width:98.5%;
+  text-align: center;
+  background-color:white;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color:rgb(218, 210, 210);
+}
+.input{
+  font-size:20px;
+  color:gray;
+  width:100%;
+  height:40px;
+}
+
+
+.inputbtn{
+  float:right;
+  background-color: white;
+  width:20%;
+  height:40px;
+  border-radius: 10px;
+  text-align:center;
+}
+.inputbtn2{
+  float:left;
+  width:45%;
+  height:40px;
+}
+.inputbtn3{
+  float:right;
+  width:45%;
+  height:40px;
+}

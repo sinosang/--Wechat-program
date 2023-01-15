@@ -1,0 +1,14 @@
+<!-- <view wx:if="{{isHide}}">
+    
+<view wx:else>
+    <view>我的首页内容</view>
+</view> -->
+
+<button wx:if="{{!userInfo}}"   bindtap="dianji" >点击</button>
+
+
+<view wx:else class="root">
+     <image class="touxian"  src="{{userInfo.avatarUrl}}"></image>
+     <text>{{userInfo.nickName}}</text>
+</view>
+<button bindtap="tui" >退出登录</button>

@@ -1,0 +1,13 @@
+zhongyaocai  中药材
+zhongchengyao 中成药(药价对比其中之一)
+xuewei 穴位
+xiyao 西药(药价对比其中之一)
+terminology 术语
+prescriptions 方剂
+hospital 医院 
+other其他药品(药价对比其中之一)
+diseasequestion 疾病问题
+diet 膳食
+drug 药品
+disease 疾病
+drugquestion 药品问题

@@ -1,0 +1,92 @@
+<!--pages/main/main.wxml-->
+
+<view class="draw">
+
+<view class="draw1">
+
+  <!-- <form bindsubmit='input2input'> -->
+  <!-- 用bindinput实现一个一个输入一个一个输出 -->
+
+<view class="input"  bindtap="searchkey">
+  《----点 击 进  行  关  键  字  搜 索----》
+</view>
+
+</view>
+
+</view>
+<div class="int5"></div>
+<swiper  autoplay="true" interval="4000" circular indicator-dots="true" indicator-color="gray" indicator-active-color="white">
+<swiper-item>
+<image class="swiperitem" mode="widthFix" 
+src="http://nick.cab/front/disease.jpg" /></swiper-item>
+<swiper-item>
+  <image class="swiperitem" mode="widthFix" 
+src="http://nick.cab/front/drug.jpg" /></swiper-item>
+<swiper-item>
+<image class="swiperitem" mode="widthFix" 
+src="http://nick.cab/front/fangji.jpg" /></swiper-item>
+</swiper>
+
+<!--test.wxml-->
+<!-- <button id="scand" class="btn" bindtap="getCode" date-type= '{{qRCodeMsg}}'>扫码</button> -->
+
+<div class="int4"></div>
+<!-- <button style="margin-top:20px;" bindtap="test">test</button> -->
+<div class="part1">
+<div class="interval"></div>
+<div id="btn1" class="btns" bindtap="gotodisease">
+<image class="btnpic" src="http://nick.cab/front/ic_yaoping.png"></image>
+<div class="text">疾病</div>
+</div>
+<!-- 原为药价查询 -->
+<div class="interval"></div>
+<div id="btn2" class="btns" bindtap="gotozhongyaocai">
+  <image class="btnpic" src="http://nick.cab/front/ic_yaocai.png"></image>
+<div class="text">中药材</div>
+</div>
+<!-- 原为医护知识 -->
+<div class="interval"></div>
+<div id="btn3" class="btns" bindtap="gotoprescriptions" >  
+<image class="btnpic" src="http://nick.cab/front/ic_fangji.png"></image>
+<div class="text">方剂</div>
+</div>
+<div class="interval2"></div>
+</div>
+<div class="int3"></div>
+<div class="part2">
+<div class="interval"></div>
+<div id="btn4" class="btns" bindtap="gotodrug">
+  <image class="btnpic" src="http://nick.cab/front/ic_pill.png"></image>
+<div class="text">药品</div>
+</div>
+<div class="interval"></div>
+<div id="btn5" class="btns" bindtap="gotodiet">
+  <image class="btnpic" src="http://nick.cab/front/ic_noodle.png"></image>
+<div class="text">药膳食疗</div>
+</div>
+<div class="interval"></div>
+<div id="btn6" class="btns" bindtap="gotoxuewei">
+  <image class="btnpic" src="http://nick.cab/front/ic_zhenjiu.png"></image>
+<div class="text">针灸穴位</div>
+</div>
+<div class="interval2"></div>
+</div>
+<div class="int3"></div>
+<div class="part3">
+<div class="interval"></div>
+<div id="btn7" class="btns" bindtap="gotohospital">
+  <image class="btnpic" src="http://nick.cab/front/ic_hospital.png"></image>
+<div class="text">医院</div>
+</div>
+<div class="interval"></div>
+<div id="btn8" class="btns" bindtap="gotosymptom">  
+<image class="btnpic" src="http://nick.cab/front/ic_heart_beat.png"></image>
+<div class="text">症状</div>
+</div>
+<div class="interval"></div>
+<div id="btn8" class="btns" bindtap="gototerminology"> 
+ <image class="btnpic" src="http://nick.cab/front/ic_book.png"></image>
+<div class="text">术语</div>
+</div>
+</div>
+<div class="int3"></div>
